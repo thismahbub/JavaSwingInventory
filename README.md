@@ -1,1 +1,1 @@
-# JavaSwingInventory
+# Java Swing Inventory
