@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="698" leftMargin="72" rightMargin="72" topMargin="72" bottomMargin="72">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="107"/>
+	<property name="ireport.y" value="139"/>
+	<queryString>
+		<![CDATA[SELECT
+     sales.`date` AS sales_date,
+     sales_detail.`Quantity` AS sales_detail_Quantity,
+     sales_detail.`price` AS sales_detail_price
+FROM
+     `sales` sales INNER JOIN `sales_detail` sales_detail ON sales.`sales_id` = sales_detail.`sales_id`]]>
+	</queryString>
+	<field name="sales_date" class="java.sql.Timestamp"/>
+	<field name="sales_detail_Quantity" class="java.lang.Long"/>
+	<field name="sales_detail_price" class="java.lang.Long"/>
+	<variable name="Sum" class="java.lang.Long" calculation="Sum">
+		<variableExpression><![CDATA[$F{sales_detail_Quantity}*$F{sales_detail_price}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="378" splitType="Stretch">
+			<bar3DChart>
+				<chart>
+					<reportElement x="0" y="0" width="698" height="378"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["Business Status Report"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{sales_date}]]></categoryExpression>
+						<valueExpression><![CDATA[$V{Sum}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<bar3DPlot>
+					<plot/>
+					<itemLabel color="#000000" backgroundColor="#FFFFFF"/>
+					<categoryAxisFormat>
+						<axisFormat>
+							<labelFont/>
+							<tickLabelFont/>
+						</axisFormat>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat>
+							<labelFont/>
+							<tickLabelFont/>
+						</axisFormat>
+					</valueAxisFormat>
+				</bar3DPlot>
+			</bar3DChart>
+		</band>
+	</summary>
+</jasperReport>
