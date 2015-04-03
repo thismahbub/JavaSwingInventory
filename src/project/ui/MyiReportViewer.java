@@ -26,7 +26,7 @@ public class MyiReportViewer extends JInternalFrame
             /* load the required JDBC driver and create the connection
             here JDBC-ODBC Bridge Driver is used*/
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost/project","admin","admin");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost/project","root","123");
             JasperPrint print = JasperFillManager.fillReport(fileName, parameter, con);
             
             setLayout(new BorderLayout());
