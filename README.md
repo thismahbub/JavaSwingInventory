@@ -1,5 +1,7 @@
 # Java Swing Inventory
 
+<img src="https://odesk-prod-att.s3.amazonaws.com/Portfolio%20Items:1275399:ImageUrl?AWSAccessKeyId=1XVAX3FNQZAFC9GJCFR2&Expires=2147483647&Signature=uHFVbo%2BlBvU%2Fo1Gx8uCWHfPIJYY%3D" />
+
 A inventory management system for desktop computer.
 
 Database informationa
