@@ -4,7 +4,7 @@
 
 A inventory management system for desktop computer.
 
-Project Doc: http://blog.softdevers.com/2011/06/accessories-shop-management-system-in.html
+Project Doc: http://softdevers.blogspot.com/2011/06/accessories-shop-management-system-in.html
 
 Database informationa
 =====================
