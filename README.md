@@ -32,6 +32,8 @@ Report
 Report design and develop using:
 iReport and JasperReport
 
+Change connection info in MyiReportViewer.java
+
 Database SQL Backup
 ===================
 Database sql backup added in db folder
