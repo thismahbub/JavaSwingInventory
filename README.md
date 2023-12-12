@@ -4,7 +4,7 @@
 
 A inventory management system for desktop computer.
 
-Project Doc: http://blog.digitalsoft.host/2011/06/accessories-shop-management-system-in.html
+Project Doc: https://digitalsofthost.blogspot.com/2011/06/accessories-shop-management-system-in.html
 
 Database informationa
 =====================
