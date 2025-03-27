@@ -6,6 +6,12 @@ A inventory management system for desktop computer.
 
 Project Doc: https://digitalsofthost.blogspot.com/2011/06/accessories-shop-management-system-in.html
 
+[![pos-dashboard.png](https://i.postimg.cc/bNwDp58c/pos-dashboard.png)](https://postimg.cc/py3XBqpq)
+
+[![pos-report.png](https://i.postimg.cc/bwGZ22sm/pos-report.png)](https://postimg.cc/3kT8sNjG)
+
+[![pos-with-form.png](https://i.postimg.cc/VLZS6FLS/pos-with-form.png)](https://postimg.cc/RNfCpKt9)
+
 Database informationa
 =====================
 DatabaseName: project
