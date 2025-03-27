@@ -1,8 +1,6 @@
 # Java Swing Inventory
 
-<img src="https://odesk-prod-att.s3.amazonaws.com/Portfolio%20Items:1275399:ImageUrl?AWSAccessKeyId=1XVAX3FNQZAFC9GJCFR2&Expires=2147483647&Signature=uHFVbo%2BlBvU%2Fo1Gx8uCWHfPIJYY%3D" />
-
-A inventory management system for desktop computer.
+An inventory management system for desktop computers.
 
 Project Doc: https://digitalsofthost.blogspot.com/2011/06/accessories-shop-management-system-in.html
 
@@ -18,11 +16,11 @@ DatabaseName: project
 UserName: root
 Password: 123
 
-this database info have update in : persistence.xml and MyiReportViewer.java
-in persistence.xml line number 15-18
+This database info has been updated in : persistence.xml and MyiReportViewer.java
+in persistence.xml, line number 15-18
 in MyiReportViewer.java line number 29
 
-It has 9 table called:
+It has 9 tables called:
 1. category
 2. customer
 3. product
@@ -35,11 +33,11 @@ It has 9 table called:
 
 Report
 ======
-Report design and develop using:
+Report design and development using:
 iReport and JasperReport
 
-Change connection info in MyiReportViewer.java
+Change the connection info in MyiReportViewer.java
 
 Database SQL Backup
 ===================
-Database sql backup added in db folder
+Database SQL backup added in db folder
